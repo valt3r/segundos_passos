@@ -10,7 +10,7 @@
         <br>
         <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Maria da Silva">
         <br>
-        <!-- esta é uma forma de fazer botão, porém não permite q
+        <!-- esta é uma forma de fazer botão, porém não permite que
         trabalhemos no css <input type="submit" name="Enviar" value="Enviar">  -->
         <label for="email">Email</label>
         <br>
@@ -20,6 +20,33 @@
         <br>
         <input type="password" name="senha" id="senha">
         <br>
+        <label for="cinema">Você já foi ao cinema este ano?</label>
+        <br>
+        <label for="sim"><input type="radio" name="cinema" id="sim" value="sim">SIM</label>
+        <label for="nao"><input type="radio" name="cinema" id="nao" value="nao">NÃO</label>
+        <br>
+        <label for="gerenoFilme">Selecione seus gêneros preferidos</label>
+        <br>
+        <label for="drama"><input type="checkbox" name="generoFilme" id="drama" value="drama">Drama</label>
+        <br>
+        <label for="terror"><input type="checkbox" name="generoFilme" id="terror" value="terror">Terror</label>
+        <br>
+        <label for="ficcao"><input type="checkbox" name="generoFilme" id="ficcao" value="ficcao">Ficção</label>
+        <br>
+        <label for="romance"><input type="checkbox" name="generoFilme" id="romance" value="romance">Romance</label>
+        <br>
+        <label for="comedia"><input type="checkbox" name="generoFilme" id="comedia" value="comedia" checked>Comédia</label>
+        <!-- caso eu queira deixar uma opção selecionada uso o atributo checked -->
+        <br>
+        <label for="genero">Gênero</label>
+        <select name="genero" id="">
+            <option selected disabled>Selecione uma opção</option>
+            <!-- Deixo a opção desabilitado -->
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+            <option value="naoBinario">Não binário</option>
+            <option value="N/A">N/A</option>
+        </select>
         <button type="submit">Enviar</button>
 
         </form>
