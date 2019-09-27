@@ -8,17 +8,18 @@
     <form action="cadastro.html" method="post">
         <label for="nomeCompleto">Nome Completo</label>
         <br>
-        <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Maria da Silva">
+        <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Maria da Silva" required>
         <br>
         <!-- esta é uma forma de fazer botão, porém não permite que
         trabalhemos no css <input type="submit" name="Enviar" value="Enviar">  -->
         <label for="email">Email</label>
         <br>
-        <input type="email" name="email" id="email" placeholder="maria@email.com">
+        <input type="email" name="email" id="email" placeholder="maria@email.com" required>
+        <!-- usando o required obrigo o usuário a preencher o campo -->
         <br>
         <label for="senha">Senha</label>
         <br>
-        <input type="password" name="senha" id="senha">
+        <input type="password" name="senha" id="senha" required>
         <br>
         <label for="cinema">Você já foi ao cinema este ano?</label>
         <br>
@@ -39,6 +40,7 @@
         <!-- caso eu queira deixar uma opção selecionada uso o atributo checked -->
         <br>
         <label for="genero">Gênero</label>
+        <br>
         <select name="genero" id="">
             <option selected disabled>Selecione uma opção</option>
             <!-- Deixo a opção desabilitado -->
@@ -47,6 +49,23 @@
             <option value="naoBinario">Não binário</option>
             <option value="N/A">N/A</option>
         </select>
+        <br>
+        <label for="paisOrigem">País de origem</label>
+        <br>
+        <select name="paisOrigem">
+            <option selected disabled>Selecione um país</option>
+            <option value="brasil">Brasil</option>
+            <option value="argentina">Argentina</option>
+            <option value="angola">Angola</option>
+            <option value="canada">Canadá</option>
+        </select>
+        <br>
+        <label for="comentarios">Comentários</label>
+        <br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="3">Digite seu comentário</textarea>
+        <br>
+        <!-- <button type="button">Validar</button> -->
+        <button type="reset">Limpar</button>
         <button type="submit">Enviar</button>
 
         </form>
