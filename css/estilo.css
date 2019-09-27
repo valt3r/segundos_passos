@@ -1,0 +1,10 @@
+input:hover {
+    border-color: red;
+}
+/* o hover serve para alterar a cor quando
+passo o mouse em cima do elemento na página */
+input:focus {
+    background-color: #ccc;
+}
+/* o focus muda a cor do campo quando o 
+usuário clica */
