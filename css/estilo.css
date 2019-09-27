@@ -1,3 +1,10 @@
+body{
+    padding: 0;
+    margin: 0;
+    /* isto reseta as configs do body
+    e me permite usar toda pág. */
+    font-family: "Arial";
+}
 input:hover{
     border-color: red;
 }
@@ -21,6 +28,7 @@ nth-child(odd) - altero o ímpar
  */
  header, section, footer{
      border: 1px solid #ccc;
+     padding: 20px;
  }
 article{
     border: 2px solid blue;
@@ -28,13 +36,25 @@ article{
 p span{
     font-size: 50px;
 }
+section{
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
 div{
     border: 2px solid rgb(200, 40, 40);
-    width: 50%;
+    width: 20%;
     padding: 50px;
-    margin: 50px;
+    margin: 2.5%;
     box-sizing: border-box;
+    float: left;
+    text-align: center;
 }
 /* padding é o espaçamento interno
 margin é o externo, ou seja, entre 
 os elementos */
+/* usando o float assim o meu footer
+acaba subindo já que ele não entende
+aonde termina o section, por isso
+é necessário criar um 
+section overflow:hidden */
