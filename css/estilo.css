@@ -1,10 +1,30 @@
-input:hover {
+input:hover{
     border-color: red;
 }
 /* o hover serve para alterar a cor quando
 passo o mouse em cima do elemento na página */
-input:focus {
+input:focus{
     background-color: #ccc;
 }
 /* o focus muda a cor do campo quando o 
 usuário clica */
+ul li:nth{
+    background-color: red;
+}
+/* 
+nth-child() - dentro do marcador indico qual
+item quero alterar
+nth-child(even) - altero o par
+nth-child(odd) - altero o ímpar
+:first-child - altero o primeiro
+:last-child - altero o último
+ */
+ header, section, footer{
+     border: 1px solid #ccc;
+ }
+article{
+    border: 2px solid blue;
+}
+p span{
+    font-size: 50px;
+}
