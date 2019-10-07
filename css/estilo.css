@@ -1,10 +1,25 @@
+*{
+    box-sizing: border-box;
+}
 body{
     padding: 0;
     margin: 0;
     /* isto reseta as configs do body
     e me permite usar toda pág. */
     font-family: "Arial";
+    font-size: 15px;
 }
+
+header{
+    background-color: #555;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
 input:hover{
     border-color: red;
 }
@@ -30,26 +45,36 @@ nth-child(odd) - altero o ímpar
      border: 1px solid #ccc;
      padding: 20px;
  }
+p{
+    font-size: 1em;
+}
 article{
     border: 2px solid blue;
+    float: left;
 }
 p span{
-    font-size: 50px;
+    font-weight: bold;
+}
+.first-section{
+    margin-top: 100px;
 }
 section{
     overflow: hidden;
-    width: 80%;
+    /* max-width: 80%;
+    width: 900px;
     margin: 0 auto;
+    position: relative; */
 }
-div{
+div.box{
     border: 2px solid rgb(200, 40, 40);
     width: 20%;
     padding: 50px;
-    margin: 2.5%;
+    margin: 2.3%;
     box-sizing: border-box;
     float: left;
     text-align: center;
 }
+
 /* padding é o espaçamento interno
 margin é o externo, ou seja, entre 
 os elementos */
@@ -58,3 +83,53 @@ acaba subindo já que ele não entende
 aonde termina o section, por isso
 é necessário criar um 
 section overflow:hidden */
+
+.logo{
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    /* none tira aquele sublinhado do link */
+}
+nav{
+    float: right;
+}
+nav ul{
+    list-style: none;
+    /* tira as marcações da lista (bolinhas) */
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    float: left;
+    margin: 10px;
+    /* margin é o espaçamento entre os itens */
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    /* uppercase deixa todas as letras maiúsculas */
+}
+form{
+    margin: 100px 0;
+}
+
+
+@media(max-width: 1200px){
+    div{
+        width: 50%;
+        margin: 0;
+    }
+    article{
+        width: 100%;
+    }
+}
+@media(max-width: 800px){
+    body{
+        font-size: 20px;
+    }
+    div{
+        width: 100%;
+    }
+}
